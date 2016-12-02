@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="width" constant="238" id="4iW-ig-efz"/>
                                     <constraint firstAttribute="height" constant="60" id="Y0O-oh-yKp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -69,11 +69,8 @@
                                     <action selector="weatherButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bw0-5X-cFR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixv-cH-532">
-                                <string key="text" base64-UTF8="YES">
-MTEQwrpDIC8gMRAQEMK6Qw
-</string>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGy-q8-gHm">
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -81,21 +78,21 @@ MTEQwrpDIC8gMRAQEMK6Qw
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Cmi-d8-KhR" secondAttribute="trailing" id="4ru-pi-Pqv"/>
-                            <constraint firstItem="Ixv-cH-532" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5jG-rQ-g5C"/>
                             <constraint firstItem="Cmi-d8-KhR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6UL-fs-bbw"/>
                             <constraint firstItem="SL4-uh-8NO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Kr-FP-QnR"/>
-                            <constraint firstItem="Ixv-cH-532" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="121" id="Gvp-LS-sZP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MGy-q8-gHm" secondAttribute="trailing" constant="92" id="BHx-bh-1Gy"/>
                             <constraint firstItem="QLK-mq-IJ4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JO8-pH-DQC"/>
-                            <constraint firstItem="SL4-uh-8NO" firstAttribute="top" secondItem="Ixv-cH-532" secondAttribute="bottom" constant="285" id="Ljb-Al-VsU"/>
                             <constraint firstItem="xVP-gv-R6m" firstAttribute="top" secondItem="m6B-Vs-xC3" secondAttribute="bottom" constant="8" id="LmN-Yf-eOr"/>
                             <constraint firstItem="SL4-uh-8NO" firstAttribute="top" secondItem="xVP-gv-R6m" secondAttribute="bottom" constant="8" id="OKL-RZ-js9"/>
+                            <constraint firstItem="SL4-uh-8NO" firstAttribute="top" secondItem="MGy-q8-gHm" secondAttribute="bottom" constant="258" id="Scw-6K-VsH"/>
                             <constraint firstItem="rVw-nX-cZD" firstAttribute="top" secondItem="SL4-uh-8NO" secondAttribute="bottom" constant="8" id="SkV-aJ-Plk"/>
                             <constraint firstItem="rVw-nX-cZD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TZe-4W-4HC"/>
                             <constraint firstItem="m6B-Vs-xC3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="VaC-8e-mVl"/>
-                            <constraint firstItem="Ixv-cH-532" firstAttribute="top" secondItem="m6B-Vs-xC3" secondAttribute="bottom" constant="8" id="ako-GT-Gxg"/>
+                            <constraint firstItem="MGy-q8-gHm" firstAttribute="top" secondItem="m6B-Vs-xC3" secondAttribute="bottom" constant="8" id="WOz-Wk-hyJ"/>
+                            <constraint firstItem="MGy-q8-gHm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="91" id="YXa-g5-CCv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cmi-d8-KhR" secondAttribute="bottom" id="fkn-vi-kyF"/>
                             <constraint firstItem="m6B-Vs-xC3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jQd-Ib-8LT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ixv-cH-532" secondAttribute="trailing" constant="121" id="jsy-VD-Qus"/>
+                            <constraint firstItem="MGy-q8-gHm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l5H-La-bto"/>
                             <constraint firstItem="QLK-mq-IJ4" firstAttribute="top" secondItem="rVw-nX-cZD" secondAttribute="bottom" constant="8" id="lg1-pX-8VD"/>
                             <constraint firstItem="Cmi-d8-KhR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mU9-13-eDw"/>
                             <constraint firstItem="xVP-gv-R6m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vQx-j8-XHb"/>
@@ -104,7 +101,7 @@ MTEQwrpDIC8gMRAQEMK6Qw
                     <connections>
                         <outlet property="cityName" destination="m6B-Vs-xC3" id="6xw-lh-r6r"/>
                         <outlet property="cityText" destination="rVw-nX-cZD" id="7Pw-uo-e02"/>
-                        <outlet property="maxMinTemp" destination="Ixv-cH-532" id="t1O-VJ-1vX"/>
+                        <outlet property="maxMinTemp" destination="MGy-q8-gHm" id="WkC-Fk-5a2"/>
                         <outlet property="weatherResult" destination="xVP-gv-R6m" id="F8c-D0-xCe"/>
                     </connections>
                 </viewController>
