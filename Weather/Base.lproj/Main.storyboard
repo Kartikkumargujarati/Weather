@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,12 +29,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVP-gv-R6m">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVP-gv-R6m">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="298" id="5Xe-AV-s0c"/>
                                     <constraint firstAttribute="width" constant="238" id="VUU-ya-gGk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -64,26 +65,48 @@
                                 <state key="normal" title="View Weather">
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="weatherButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bw0-5X-cFR"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixv-cH-532">
+                                <string key="text" base64-UTF8="YES">
+MTEQwrpDIC8gMRAQEMK6Qw
+</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Cmi-d8-KhR" secondAttribute="trailing" id="4ru-pi-Pqv"/>
+                            <constraint firstItem="Ixv-cH-532" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5jG-rQ-g5C"/>
                             <constraint firstItem="Cmi-d8-KhR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6UL-fs-bbw"/>
                             <constraint firstItem="SL4-uh-8NO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Kr-FP-QnR"/>
+                            <constraint firstItem="Ixv-cH-532" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="121" id="Gvp-LS-sZP"/>
                             <constraint firstItem="QLK-mq-IJ4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JO8-pH-DQC"/>
+                            <constraint firstItem="SL4-uh-8NO" firstAttribute="top" secondItem="Ixv-cH-532" secondAttribute="bottom" constant="285" id="Ljb-Al-VsU"/>
                             <constraint firstItem="xVP-gv-R6m" firstAttribute="top" secondItem="m6B-Vs-xC3" secondAttribute="bottom" constant="8" id="LmN-Yf-eOr"/>
                             <constraint firstItem="SL4-uh-8NO" firstAttribute="top" secondItem="xVP-gv-R6m" secondAttribute="bottom" constant="8" id="OKL-RZ-js9"/>
                             <constraint firstItem="rVw-nX-cZD" firstAttribute="top" secondItem="SL4-uh-8NO" secondAttribute="bottom" constant="8" id="SkV-aJ-Plk"/>
                             <constraint firstItem="rVw-nX-cZD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TZe-4W-4HC"/>
                             <constraint firstItem="m6B-Vs-xC3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="VaC-8e-mVl"/>
+                            <constraint firstItem="Ixv-cH-532" firstAttribute="top" secondItem="m6B-Vs-xC3" secondAttribute="bottom" constant="8" id="ako-GT-Gxg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cmi-d8-KhR" secondAttribute="bottom" id="fkn-vi-kyF"/>
                             <constraint firstItem="m6B-Vs-xC3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jQd-Ib-8LT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ixv-cH-532" secondAttribute="trailing" constant="121" id="jsy-VD-Qus"/>
                             <constraint firstItem="QLK-mq-IJ4" firstAttribute="top" secondItem="rVw-nX-cZD" secondAttribute="bottom" constant="8" id="lg1-pX-8VD"/>
                             <constraint firstItem="Cmi-d8-KhR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mU9-13-eDw"/>
                             <constraint firstItem="xVP-gv-R6m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vQx-j8-XHb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityName" destination="m6B-Vs-xC3" id="6xw-lh-r6r"/>
+                        <outlet property="cityText" destination="rVw-nX-cZD" id="7Pw-uo-e02"/>
+                        <outlet property="maxMinTemp" destination="Ixv-cH-532" id="t1O-VJ-1vX"/>
+                        <outlet property="weatherResult" destination="xVP-gv-R6m" id="F8c-D0-xCe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
